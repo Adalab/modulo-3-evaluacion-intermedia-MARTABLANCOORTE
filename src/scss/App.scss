@@ -4,8 +4,24 @@
     background-color: violet;
 }
 
-.cards{
+.cards__quote{
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+   font-weight: bolder;
+   width: 300px;
+}
+
+.cards__character{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+   font-weight: bolder;
+    width: 300px;
+    color: green;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
 }

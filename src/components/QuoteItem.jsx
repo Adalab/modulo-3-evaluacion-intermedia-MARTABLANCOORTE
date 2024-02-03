@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import '../scss/App.scss';
+import '../scss/App.scss'
 
 function QuoteItem( {quote, character} ) {
 
   return (
     <>
-      <h2 className="card">{quote}</h2>
-      <h2 className="card">{character}</h2>
+      <h2 className="cards__quote">{quote}</h2>
+      <h2 className="cards__character">{character}</h2>
     </>
   );
 }

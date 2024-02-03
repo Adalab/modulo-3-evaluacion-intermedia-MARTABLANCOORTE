@@ -1,5 +1,8 @@
 function FilterCharacters({handleFilterCharacters}) {
   const handleInputCharacter = (event) => {
+
+    console.log (event.currentTarget.value);
+
     handleFilterCharacters(event.currentTarget.value);
   };
   return (
@@ -8,7 +11,7 @@ function FilterCharacters({handleFilterCharacters}) {
         {" "}
         Filtrar por personajes:
         <select name="Characters" id="Characters" onInput={handleInputCharacter} >
-          <option value="Todos">Todos</option>
+          <option value="All">Todos</option>
           <option value="Ross">Ross</option>
           <option value="Monica">Monica</option>
           <option value="Joey">Joey</option>
@@ -20,5 +23,9 @@ function FilterCharacters({handleFilterCharacters}) {
     </form>
   );
 }
+
+FilterCharacters.propTypes = {
+  handleFilterCharacters: PropTypes.func, 
+};
 
 export default FilterCharacters;

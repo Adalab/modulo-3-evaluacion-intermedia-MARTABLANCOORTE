@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import QuoteItem from "./QuoteItem";
 
-function QuotesList({ phrases, Characters }) {
+function QuotesList({ phrases }) {
 
   const htmlPhrases = phrases.map((phrase, idx)  => (
     <li key={idx}>
@@ -13,26 +13,16 @@ function QuotesList({ phrases, Characters }) {
     </li>
   ));
 
-  const htmlCharacters = Characters.map((character, idx)  => (
-    <li key={idx}>
-      <QuoteItem
-        quote={Characters.quote}
-        character={Characters.character}
-      />
-    </li>
-  ));
-
   return (
     <ul>
       {htmlPhrases}
-      {htmlCharacters}
     </ul>
   );
 }
 
+
 QuotesList.propTypes = {
   phrases: PropTypes.array,
-  Characters: PropTypes.array
 }
 
 export default QuotesList;

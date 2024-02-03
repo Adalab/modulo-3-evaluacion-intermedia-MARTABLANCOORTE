@@ -14,7 +14,7 @@ function App() {
 
   //Variable Estado del Array
   const [phrases] = useState (dataPhrasesAndCharacters);
-  const [Characters] = useState (dataPhrasesAndCharacters);
+  const [characters] = useState (dataPhrasesAndCharacters);
 
   // Filtro de Frases
   const [FilterPhrase, setFilterPhrase] = useState ('');
@@ -33,7 +33,11 @@ function App() {
     setFilterCharacter(filterCharacterValue);
   };
 
-  const filteredCharacters = Characters.filter( dataCharacter => dataCharacter.character.toLowerCase().includes(FilterCharacter.toLowerCase()) );
+  const filteredCharacters = characters.filter( dataCharacter => 
+    if{ 
+      
+    }
+    dataCharacter.character === FilterCharacter );
 
  
 
